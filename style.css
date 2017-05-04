@@ -1,0 +1,920 @@
+﻿html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i,  dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;                               /* îáíóëÿåì îòñòóïû è óáèðàåì áîðäþðû */
+	vertical-align: baseline;          /* ïðèâîäèì âñå ê îäíîé áàçîâîé ëèíèè */
+	background: transparent;      /* ÷òîáû íå ïðîñêàêèâàëè ëåâûå ôîíû, óñòàíîâëåííûå ïî óìîë÷àíèþ */
+	font-size: 100%;                     /* ðàçìåð øðèôòà âñåì îäèíàêîâûé */
+}
+#main_form {
+
+}
+
+
+a {                                      	     /* ññûëêà íå â îáùåì ñïèñêå ÷òîáû íå ñáðàñûâàòü outline ïî óìîë÷àíèþ */
+	margin:0;
+	padding:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
+	outline:none;
+}
+.avatar_and_fio .level_pc .fio {
+	width: 100%;
+	text-align: left;
+}
+
+table {						/* óñòðàíÿåì îòñòóïû ìåæäó ÿ÷åéêàìè òàáëèöû */
+	border-collapse: collapse; 
+	border-spacing: 0;
+}
+td, td {
+	vertical-align: top;			/* âîçâðàùàåì ïðèâû÷íîå âåðòèêàëüíîå âûðàâíèâàíèå */
+} 
+input, select, button, textarea {
+	margin: 0; 				/* óáèðàåì îòñòóïû ïî óìîë÷àíèþ äëÿ ýëåìåíòîâ ôîðì (â ÷àñòíîñòè äëÿ checkbox è radio) */
+	font-size: 100%; 			/* äåëàåì ðàçìåð øðèôòîâ âåçäå îäèíàêîâûì */
+	outline: none;
+	border:none;
+}
+input[type="text"], input[type="password"], textarea {
+	padding: 0;
+	border: none;	/* óáèðàåì âíóòðåííèå îòñòóïû äëÿ òåêñòîâûõ ïîëåé */
+	width: auto;
+}
+input[type="checkbox"] { 		/* âåðòèêàëüíîå âûðàâíèâàíèå ÷åêáîêñîâ è ðàäèîáàòîíîâ îòíîñèòåëüíî ìåòîê */
+	vertical-align: bottom;
+}
+input[type="radio"] {
+	vertical-align: text-bottom;
+}
+sub {
+	vertical-align: sub;
+	font-size: smaller;
+}
+sup {
+	vertical-align: super;
+	font-size: smaller;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: inline-block;
+	width: 100%;
+}
+nav ul {
+	 list-style:none;
+}
+/* --------------- /reset.css --------------- */
+
+/* --------------- áàçîâûå íàñòðîéêè ---------*/
+html {
+	min-height:100%; /* âñåãäà ïîêàçûâàåì âåðòèêàëüíóþ ïîëîñó ïðîêðóòêè  */
+}
+body {
+	background-color:#F6F6F6;
+	color: #606060;
+	text-align: left;
+	font-size: 1em; /* èñïîëüçóåì áåçîïàñíûå øðèôòîâûå CSS ñòåêè */
+	min-height:100%;
+	cursor:pointer;
+	
+}
+#level_pc {
+	width: 50px;
+}
+
+#main_form p .fio {
+	text-align: left;
+}
+
+
+a, a:visited { /* ïîðÿäîê ïðàâèë äëÿ ññûëîê èìååò çíà÷åíèå */
+	color: #339933;
+	text-decoration: underline;
+}
+a:hover {
+	color: #339933;
+	text-decoration:none;
+}
+a:focus, a:active {
+	color: #339933;
+	text-decoration: underline;
+}
+h1, h2, h3, h4, h5, h6{
+	font-weight:normal;
+}
+img{
+	width:75%;
+	height:100hv;
+	border-radius:25%;
+	
+	cursor:pointer;
+}
+.clr{
+	clear:both;
+}
+.clearfix:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+
+input [type=date]{
+	font-family:'Arial';
+}
+/*------------------------*/
+
+@media (min-width : 800px ) {
+
+.center-block-main{
+		margin:10px auto; max-width:840px;
+		
+	}
+
+.resume{
+	 height:auto;
+}	
+	
+	
+	 nav {
+	display: block;
+	position: relative;
+	float: left;
+	margin-left: 0%;
+	padding-left: 0%;
+	width: 60%;
+	
+	
+}
+
+ul {
+  width: 100%;
+  margin: 0 auto;
+  list-style: none;
+  overflow: hidden;
+}
+li {
+	float: left;
+	width: 22%;
+	margin-right: 0.5%;
+}
+	
+	
+	
+	
+main{
+		float:left;
+		width:100%;
+		background-color:#FFFFFF;
+		margin-bottom:60px;
+
+}
+
+.avatar_and_fio{
+	height: auto;
+	width:100%;
+}
+.avatar{
+	width: 250px;
+	float: right;
+	margin-top: 10px;
+	border-radius: 50%;
+	display: inline-block;
+	/* [disabled]text-align: justify; */
+	/* [disabled]position: relative center; */
+	max-height: 190px;
+	margin-right: 20px;
+		
+		
+}
+.fio{
+	margin-top: 10px;
+	margin-left: 10px;
+	max-width: 80%;
+}	
+.self_inform{
+	float:left;
+	top:-25px;
+	
+}	
+.fio_hr{
+	height: 4px;
+	background-color: black;
+	width: 100%;
+	margin-left: 10px;
+	margin-top: 20px;
+	outline: none;
+	border-bottom-style: none;
+}
+.place_of_life{
+	font-size:2em;
+	margin-left:10px;
+	margin-top:50px;
+	
+	color:black;
+	font-weight:bold;
+	font-family:Arial
+}
+.education{
+	resize: none;
+	margin-top:10px;
+	margin-left:10px;
+	font-size: 1em;
+	font-family: 'Arial';
+	
+}
+.educ_header{
+	font-size:2em;
+	margin-left:10px;
+	margin-top:50px;
+	
+	color:black;
+	font-weight:bold;
+	font-family:Arial
+}
+.educ{
+	
+	float:right;
+	
+	
+}
+
+.educ_head{
+	font-size:2em;
+	margin-left:10px;
+	margin-top:50px;
+	
+	color:black;
+	font-weight:bold;
+	font-family:Arial
+}
+.work{
+	overflow: hidden;
+	font-family: 'Arial';
+	resize: none;
+	margin-left: 10px;
+	margin-top: 10px;
+	font-size: 1em;
+	
+}
+	
+	
+	
+
+.avatar_and_fio .avatar #upload {
+	layer-background-image: url(images/ava.png);
+	opacity: 0;
+	opacity: -1;
+	width: 22%;
+	height: 39%;
+	position: absolute;
+	background: rgba(255,255,255,0.1);
+	margin-top: 11px;
+	margin-left: 26px;
+	
+}
+
+.phones{
+	width: 50%;
+	float: right;
+	
+}
+.plclife_and_phones{
+	height: auto;
+	padding-top: -20px;
+	margin-top: 0;
+}
+.level_educ{
+	height:auto;
+	margin-top:10px;
+}
+
+.place_life{
+	width:50%;
+	float:left;
+}
+
+.phone_contacts{
+	margin-right:150px;
+	margin-top:50px;
+	
+	font-size:2em;
+	color:black;
+	font-weight:bold;
+	font-family:Arial
+}
+.pc_mind{
+	font-family: 'Arial';
+	resize: none;
+	margin-left: 10px;
+	margin-top: 15px;
+	font-size: 1em;
+	overflow: hidden;
+	
+}
+
+.level_pc{
+	float: left;
+	width: 70%;
+	height: 100%;
+}
+
+.level_pc_new{
+	float:left;
+	width:50%;
+	
+}
+
+.art_education{
+	width:50%;
+	float:right;
+}
+
+.cfalification{
+	width:50%;
+}
+
+#phones_educ {
+	float: right;
+	width: 50%;
+}
+main #phones_educ .phones_educ_div {
+	float: left;
+	width: 100%;
+}
+article .level_pc  {
+	width: 50%;
+}
+.left_side_line{
+	border-left: 1px solid #ccc;
+	padding-left: 5px;
+}
+#btn {
+	background-color: #000;
+	margin-left: 35%;
+	margin-right: 35%;
+	border: none;
+	color: white;
+	font-family: 'Arial';
+	height: 45px;
+	width: 30%;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	margin-bottom: 15px;
+	cursor: pointer;
+	border-radius: 5px;
+	font-size: 1em;
+}
+
+#main_form p .fio {
+	float: left;
+	text-align: left;
+	width: 50%;
+}
+#main_form .center-block-main.avatar #companyLogo {
+	width: 50%;
+	/* [disabled]position: relative; */
+}
+
+
+
+
+}
+
+
+
+
+/*------------------------------------------------------------*/
+
+@media (max-width: 800px){
+	.center-block-main{
+	margin-top: 10px;
+	margin-right: 1%;
+	margin-left: 1%;
+	margin-bottom: 10px;
+	max-width: 840px;
+		
+	}
+
+.resume{
+	 height:auto;
+}	
+	
+	
+	 nav {
+	display: block;
+	position: relative;
+	float: left;
+	margin-left: 0%;
+	padding-left: 0%;
+	width: 60%;
+	
+	
+}
+
+ul {
+  width: 100%;
+  margin: 0 auto;
+  list-style: none;
+  overflow: hidden;
+}
+li {
+	float: left;
+	width: 22%;
+	margin-right: 0.5%;
+}
+	
+	
+	
+	
+main{
+		float:left;
+		width:100%;
+		background-color:#FFFFFF;
+		margin-bottom:60px;
+
+}
+
+.avatar_and_fio{
+	width:100%;
+	height:auto;
+}
+.avatar{
+	width: 30%;
+	float:right;
+	height:150px;
+}
+.avatar img{
+	width: 150px;
+	height:150px;
+	
+}
+.fio{
+	margin-top: 10px;
+	margin-left: 10px;
+	max-width: 80%;
+}	
+.self_inform{
+	float:left;
+	top:-25px;
+	
+}	
+.fio_hr{
+	height:4px;
+	background-color: black;
+	width: 85%;
+	margin-left: 10px;
+	margin-top: 20px;
+	outline: none;
+	border-bottom-style: none;
+}
+.place_of_life{
+	font-size:2em;
+	margin-left:10px;
+	margin-top:50px;
+	
+	color:black;
+	font-weight:bold;
+	font-family:Arial
+}
+.education{
+	resize: none;
+	margin-top:10px;
+	margin-left:10px;
+	font-size: 1em;
+	font-family: 'Arial';
+	
+}
+.educ_header{
+	font-size:2em;
+	margin-left:10px;
+	margin-top:50px;
+	
+	color:black;
+	font-weight:bold;
+	font-family:Arial
+}
+.educ{
+	
+	float:right;
+	
+	
+}
+
+.educ_head{
+	font-size:2em;
+	margin-left:10px;
+	margin-top:50px;
+	
+	color:black;
+	font-weight:bold;
+	font-family:Arial
+}
+.work{
+	overflow: hidden;
+	font-family: 'Arial';
+	resize: none;
+	margin-left: 10px;
+	margin-top: 10px;
+	font-size: 1em;
+	
+}
+.ava{
+
+	border-radius: 100px;
+	margin-right:50px;
+	margin-top:30px;
+	width:150px;
+	height:150px;
+	float:right;
+	background-size:50%;
+	
+	
+}
+.phones{
+	width: 50%;
+	float: none;
+	margin-left: 0px;
+	
+}
+.plclife_and_phones{
+	height: auto;
+	margin-left: 10px;
+	width: 98%;
+}
+.level_educ{
+	height: auto;
+	margin-top: 10px;
+	margin-left: 4px;
+	width: 99%;
+}
+
+.place_life{
+	width:50%;
+	float:left;
+}
+
+.phone_contacts{
+	margin-right:150px;
+	margin-top:50px;
+	
+	font-size:2em;
+	color:black;
+	font-weight:bold;
+	font-family:Arial
+}
+.pc_mind{
+	font-family: 'Arial';
+	resize: none;
+	margin-left: 10px;
+	margin-top: 15px;
+	font-size: 1em;
+	overflow: hidden;
+	
+}
+
+.level_pc{
+	float: left;
+	width: 57%;
+}
+
+.level_pc_new{
+	float:left;
+	width:50%;
+	
+}
+
+.art_education{
+	width:50%;
+	float:right;
+}
+
+.cfalification{
+	width:50%;
+}
+
+#phones_educ {
+	float: right;
+	width: 50%;
+}
+main #phones_educ .phones_educ_div {
+	float: left;
+	width: 100%;
+}
+main .level_pc .level_pc_div {
+	width: 50%;
+}
+.left_side_line{
+	border-left: 1px solid #ccc;
+	padding-left:5px;
+}
+
+
+}
+
+
+/*------------------------------------------------------------*/
+@media (max-width: 638px){
+	.center-block-main{
+	margin-top: 10px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 10px;
+	max-width: 840px;
+	align-content: center;
+		
+	}
+
+.resume{
+	 height:auto;
+}	
+	
+	
+	 nav {
+	display: block;
+	position: relative;
+	float: left;
+	margin-left: 0%;
+	padding-left: 0%;
+	width: 60%;
+	}
+
+ul {
+  width: 100%;
+  margin: 0 auto;
+  list-style: none;
+  overflow: hidden;
+}
+li {
+	float: left;
+	width: 22%;
+	margin-right: 0.5%;
+}
+	
+	
+	
+	
+main{
+		float:left;
+		width:98.3%;
+		background-color:#FFFFFF;
+		margin-bottom:60px;
+
+}
+p{
+	font-size: 0.8em;
+	width: 95%;
+}
+h1{font-size:16px !important;
+font-weight:normal;
+width:90% !important;}
+
+.avatar_and_fio .avatar #upload {
+	layer-background-image: url(images/ava.png);
+	opacity: 0;
+	opacity: -1;
+	width: 33%;
+	height: 36%;
+	position: absolute;
+	background: rgba(255,255,255,0.1);
+	margin-top: 11px;
+	margin-left: -23px;
+	
+}
+
+.file {
+    background: url("images/ava.png") no-repeat scroll 0 0 transparent;
+    height: 130px;
+    width: 130px;
+    display: block;
+}
+
+.file [type="file"] {
+    opacity: 0;
+}
+
+.avatar_and_fio{
+	height: auto;
+	text-align: center;
+}
+.avatar{
+	width: 100%;
+}
+.hr{ size:0.5 !important;
+max-height:0px !important;}
+.fio{
+	margin-top: 10px;
+	margin-left: 10px;
+	/* [disabled]max-width: 107px; */
+	width: 100%;
+	text-align: center;
+	size: 25 !important;
+}	
+.self_inform{
+	float:left;
+	top:-25px;
+	
+}	
+.fio_hr{
+	height: 1px;
+	background-color: black;
+	width: 50%;
+	margin-left: 10px;
+	margin-top: 20px;
+	outline: none;
+	border-bottom-style: none;
+}
+.place_of_life{
+	font-size: 2em;
+	margin-top: 50px;
+	color: black;
+	font-weight: bold;
+	font-family: Arial;
+	width: 100%;
+	text-align: center;
+	/* [disabled]float: left; */
+}
+.education{
+	resize: none;
+	margin-top: 10px;
+	margin-left: 10px;
+	font-size: 1em;
+	font-family: 'Arial';
+	width: 90%;
+	max-height: auto;
+	min-height: 50px;
+	height: 50px;
+	text-align: center;
+	
+}
+.educ_header{
+	font-size:2em;
+	margin-left:10px;
+	margin-top:50px;
+	
+	color:black;
+	font-weight:bold;
+	font-family:Arial
+}
+.educ{
+	
+	float:right;
+	
+	
+}
+
+.educ_head{
+	font-size: 2em;
+	margin-left: 5px;
+	margin-top: 50px;
+	color: black;
+	font-weight: bold;
+	font-family: Arial;
+	width: 100%;
+	text-align: center;
+}
+.work{
+	overflow: hidden;
+	font-family: 'Arial';
+	resize: none;
+	margin-left: 10px;
+	margin-top: 10px;
+	font-size: 1em;
+	max-height: auto;
+	min-height: 50px;
+	width: 90%;
+	height: 60px;
+	text-align: center;
+	
+}
+.ava{
+	border-radius: 100px;
+	margin-top: 30px;
+	width: 150px;
+	height: 150px;
+	float: none
+	
+}
+.phones{
+	width: 99%;
+	float: none;
+	align-content: center;
+	text-align: center;
+	
+}
+.plclife_and_phones{
+	height: auto;
+	margin-left: 10px;
+	width: 98%;
+}
+.level_educ{
+	height: auto;
+	margin-left: 10px;
+	width: 98%;
+}
+
+.place_life{
+	width: 100%;
+	float: none;
+	text-align: center;
+}
+
+.phone_contacts{
+	/* [disabled]margin-right: 150px; */
+	/* [disabled]margin-top:50px; */
+	font-size: 2em;
+	color: black;
+	font-weight: bold;
+	font-family: Arial;
+	float: none;
+}
+.pc_mind{
+	font-family: 'Arial';
+	resize: none;
+	margin-left: 10px;
+	margin-top: 15px;
+	font-size: 1em;
+	overflow: hidden;
+	width: 90%;
+	min-height: 50px;
+	max-height: auto;
+	height: 50px;
+	text-align: center;
+	
+}
+
+.level_pc{
+	float: none;
+	width: 99%;
+	text-align: center;
+	margin-top: 0;
+}
+
+.level_pc_new{
+	float: none;
+	width: 98%;
+	text-align: center;
+	
+}
+
+.art_education{
+	width: 98%;
+	float: none;
+	text-align: center;
+}
+
+.cfalification{
+	width: 98%;
+	text-align: center;
+}
+
+#phones_educ {
+	float: right;
+	width: 50%;
+}
+main #phones_educ .phones_educ_div {
+	float: left;
+	width: 100%;
+}
+main .level_pc .level_pc_div {
+	width: 50%;
+}
+.left_side_line{
+	/* [disabled]border-left: 1px solid #ccc; */
+	width: 1px;
+
+
+
+
+	margin-left: 5px !important !important !important;
+	text-align: center;
+	margin-left: 0 !important;
+}
+#btn {
+	background-color: #000;
+	margin-left: 35%;
+	margin-right: 35%;
+	border: none;
+	color: white;
+	font-family: 'Arial';
+	height: 36px;
+	width: 29%;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	margin-bottom: 15px;
+	cursor: pointer;
+	border-radius: 10px;
+	font-size: 0.7em;
+}
+#main_form p .fio {
+	text-align: center;
+}
+
+
+
+}
+
+}
